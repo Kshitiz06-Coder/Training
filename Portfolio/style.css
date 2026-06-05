@@ -3,19 +3,42 @@
     padding: 0;
     box-sizing: border-box;
 }
+.container{
+    background-color:aliceblue;
+    height: 500px;
+    width: 400px;
+    margin: 50px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 20px;
+    justify-content: center;
+    box-shadow: 2px 2px 2px 2px black;
+}
 
 body{
-    background-color: aliceblue;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(192, 225, 254);
+    font-family:'Times New Roman', Times, serif;
 }
 
 img{
     width: 180px;
     height: 180px;
-    border-radius: auto;
-    margin-bottom: auto;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px 5px black;
 }
 
 h1{
- color:darkslategrey;
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ color:rgb(10, 48, 123);
+}
+
+
+
+button{
+    color:aliceblue;
+    background-color: blue;
+    height:40px;
+    width: 300px;
+    text-align: center;
+    border-radius: 5px;
 }
