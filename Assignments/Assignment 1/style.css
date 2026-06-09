@@ -8,15 +8,6 @@ body{
     background-color: whitesmoke;
 }
 
-#nav-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    background-color: rgb(255, 255, 255);
-}
-
 .navbar{
     width: 100%;
     height: 70px;
@@ -25,6 +16,7 @@ body{
     align-items: center;
     justify-content:space-between;
     gap: 10px;
+    background-color: rgb(255, 255, 255);
 }
 
 .logo{
@@ -108,6 +100,11 @@ a:hover {
     align-items: center;
     align-self: stretch;
     border-radius: 5px;
+}
+
+.hero-button:hover {
+    text-decoration: underline;
+    color: blue;
 }
 
 .background{
@@ -219,5 +216,71 @@ a:hover {
     margin: 50px;
     padding:30px;
     justify-content: space-between;
-    background-color: #F3F4F6;
+    background-color:white;
+     border-radius: 20px;
+}
+
+.container2{
+    display: flex;
+    flex-direction:column;
+    margin: 50px;
+    padding:30px;
+    justify-content: space-between;
+    background-color:white;
+    border-radius: 20px;
+}
+
+.container3{
+    display: flex;
+    flex-direction:column;
+    margin: 50px;
+    padding:30px;
+    justify-content: space-between;
+    background-color:white;
+     border-radius: 20px;
+}
+
+.container4{
+    display: flex;
+    flex-direction:column;
+    margin: 50px;
+    padding:30px;
+    align-items: flex-end;
+    background-color:white;
+    border-radius: 20px;
+}
+
+.first-row{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+    padding:10px;
+    margin: 10px;
+}
+
+.second-row{
+    display: flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    padding:10px;
+    margin: 10px;
+    gap: 1px;
+}
+
+.tag{
+    color: rgb(220, 135, 15);
+}
+
+.cart{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.best-seller{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
