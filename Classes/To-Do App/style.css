@@ -53,7 +53,7 @@ input#dueDateInput {
 }
 #addBtn {
   padding: 10px 16px;
-  background: #4caf50;
+  background: #000000;
   color: white;
   border: none;
   border-radius: 6px;
@@ -61,7 +61,7 @@ input#dueDateInput {
   font-size: 15px;
 }
 #addBtn:hover {
-  background: #43a047;
+  background: #000000;
 }
 
 #errorMsg {
@@ -90,15 +90,15 @@ input#dueDateInput {
 .filter-btn {
   flex: 1;
   padding: 8px;
-  border: 1px solid #4caf50;
+  border: 1px solid #000000;
   background: #fff;
-  color: #4caf50;
+  color: #000000;
   border-radius: 6px;
   cursor: pointer;
   font-size: 13px;
 }
 .filter-btn.active {
-  background: #4caf50;
+  background: #000000;
   color: #fff;
 }
 
@@ -147,7 +147,7 @@ li.task-item.priority-Medium {
   border-left-color: #fb8c00;
 }
 li.task-item.priority-Low {
-  border-left-color: #43a047;
+  border-left-color: #000000;
 }
 
 li.task-item.hidden {
@@ -178,7 +178,7 @@ li.task-item.hidden {
   color: #fb8c00;
 }
 .task-meta .priority-tag.Low {
-  color: #43a047;
+  color: #000000;
 }
 
 .overdue {
