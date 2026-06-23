@@ -1,0 +1,50 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    background-color: rgb(207, 231, 253);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#container{
+    display: flex;
+    gap:20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.card{
+    display: flex;
+    justify-content:center;
+    flex-direction:column;
+    margin: 10px;
+    padding: 10px;
+    gap: 0.5px;
+    background-color:rgb(255, 255, 255);
+    height: 530px;
+    width: 400px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px 1px black;
+}
+
+img{
+    width: auto;
+    height: auto;
+}
+
+h1{
+    justify-content: center;
+    text-align: center;
+    margin:10px;
+    padding:10px;
+}
+
+ */

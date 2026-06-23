@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background: #eef1f5;
+  margin: 0;
+  padding: 30px 12px;
+  display: flex;
+  justify-content: center;
+}
+.container {
+  background: #fff;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+h1 {
+  text-align: center;
+  margin-top: 0;
+  color: #2c3e50;
+}
+
+/* Add task row */
+.input-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+#taskInput {
+  flex: 1 1 140px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+select#priorityInput {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+input#dueDateInput {
+  padding: 9px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+#addBtn {
+  padding: 10px 16px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+}
+#addBtn:hover {
+  background: #43a047;
+}
+
+#errorMsg {
+  color: #e53935;
+  font-size: 13px;
+  min-height: 16px;
+  margin-bottom: 10px;
+}
+
+/* Search */
+#searchInput {
+  width: 100%;
+  padding: 9px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* Filters */
+.filters {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.filter-btn {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #4caf50;
+  background: #fff;
+  color: #4caf50;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+.filter-btn.active {
+  background: #4caf50;
+  color: #fff;
+}
+
+/* Stats */
+.stats {
+  display: flex;
+  justify-content: space-between;
+  background: #f7f9fa;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 12px;
+  font-size: 13px;
+  color: #444;
+}
+.stats div {
+  text-align: center;
+  flex: 1;
+}
+.stats strong {
+  display: block;
+  font-size: 16px;
+  color: #2c3e50;
+}
+
+/* Task list */
+ul#taskList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 360px;
+  overflow-y: auto;
+}
+li.task-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  gap: 8px;
+  border-left: 5px solid #ccc;
+}
+li.task-item.priority-High {
+  border-left-color: #e53935;
+}
+li.task-item.priority-Medium {
+  border-left-color: #fb8c00;
+}
+li.task-item.priority-Low {
+  border-left-color: #43a047;
+}
+
+li.task-item.hidden {
+  display: none;
+}
+
+.task-main {
+  flex: 1;
+  min-width: 0;
+}
+.task-text {
+  word-break: break-word;
+  font-size: 15px;
+  display: block;
+}
+.task-meta {
+  font-size: 12px;
+  color: #777;
+  margin-top: 3px;
+}
+.task-meta .priority-tag {
+  font-weight: bold;
+}
+.task-meta .priority-tag.High {
+  color: #e53935;
+}
+.task-meta .priority-tag.Medium {
+  color: #fb8c00;
+}
+.task-meta .priority-tag.Low {
+  color: #43a047;
+}
+
+.overdue {
+  color: #e53935;
+  font-weight: bold;
+}
+
+li.task-item.completed .task-text {
+  text-decoration: line-through;
+  color: #999;
+}
+li.task-item.completed {
+  background: #f5fbf5;
+}
+
+.btn-group {
+  display: flex;
+  gap: 6px;
+  flex-shrink: 0;
+}
+.complete-btn,
+.delete-btn {
+  border: none;
+  border-radius: 5px;
+  padding: 6px 9px;
+  cursor: pointer;
+  font-size: 12px;
+  color: white;
+  white-space: nowrap;
+}
+.complete-btn {
+  background: #2196f3;
+}
+.complete-btn:hover {
+  background: #1976d2;
+}
+.delete-btn {
+  background: #e53935;
+}
+.delete-btn:hover {
+  background: #c62828;
+}
+
+.empty-msg {
+  text-align: center;
+  color: #999;
+  padding: 16px;
+  font-size: 14px;
+}
+
+#clearAllBtn {
+  width: 100%;
+  margin-top: 14px;
+  padding: 10px;
+  background: #757575;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+#clearAllBtn:hover {
+  background: #616161;
+}
+
+@media (max-width: 420px) {
+  .input-row {
+    flex-direction: column;
+  }
+  select#priorityInput,
+  input#dueDateInput,
+  #addBtn {
+    width: 100%;
+  }
+}

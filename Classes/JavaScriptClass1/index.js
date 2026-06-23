@@ -675,3 +675,121 @@
 // }
 
 // fetchData()
+
+// const getUsers = async() => {
+//   const response = await fetch("https://dummyjson.com/users")
+//   const data = await response.json();
+//   console.log(data);
+
+//   const tableBody = document.getElementById("tableBody");
+
+//   tableBody.innerHTML = data.users
+//   .map(user =>
+//     `<tr>
+//       <td>${user.id}</td>
+//       <td>${user.firstName}</td>
+//       <td>${user.email}</td>
+//     </tr>`
+//   )
+//   .join("");
+// }
+
+// getUsers();
+
+/*Shooping Cards*/
+// const fetchData = async() => {
+//   const datas = await fetch("https://dummyjson.com/products");
+//   const result = await datas.json();
+//   console.log(result);
+
+//   const container = document.querySelector("#container");
+//   container.innerHTML = result.products.map(products =>
+//     `<div class="card">
+//       <p class="rate">${products.rating}</p>
+//       <img src = ${products.images[0]} class="image">
+//       <p class="description">${products.title}</p>
+//       <p class="price">$${products.price}</p>
+//       <p class="discount">${products.discountPercentage}%</p>
+//     </div>`
+//   )
+//   .join("")
+// }
+// fetchData();
+
+
+// /*Event Listener*/
+/* INPUT LISTENER */
+// const nameInput = document.querySelector(".name")
+// const output = document.querySelector(".output")
+// nameInput.addEventListener("input", () =>{
+//   output.innerText = nameInput.value
+// })
+
+// /* MOUSE LISTENER */
+ const nameInput = document.querySelector(".name")
+ const output = document.querySelector(".output")
+ const submitButton = document.querySelector(".submit")
+ submitButton.addEventListener("click", () =>{
+    // output.innerText = nameInput.value
+// getUsers()
+ })
+
+
+// const nameInput = document.querySelector(".name")
+// const output = document.querySelector(".output")
+// const submitButton = document.querySelector(".submit")
+// submitButton.addEventListener("mouseover", () =>{
+//    output.innerText = nameInput.value
+// })
+
+
+// const nameInput = document.querySelector(".name")
+// const output = document.querySelector(".output")
+// const submitButton = document.querySelector(".submit")
+// submitButton.addEventListener("dblclick", () =>{
+//    output.innerText = nameInput.value
+// })
+
+// import { addNumber } from "./practise.js";
+// const result = addNumber(60,9)
+// console.log(result)
+
+const num1Input = document.getElementById('num1');
+const num2Input = document.getElementById('num2');
+const operatorInput = document.getElementById('operator');
+const calcButton = document.getElementById('calcButton');
+const resultDisplay = document.getElementById('result');
+
+function calculate() {
+    const num1 = parseFloat(num1Input.value);
+    const num2 = parseFloat(num2Input.value);
+    const operator = operatorInput.value;
+    let result;
+    if (isNaN(num1) || isNaN(num2)) {
+        resultDisplay.innerText = "Result: Please enter both numbers";
+        return;
+    }
+
+    switch (operator) {
+        case 'add':
+            result = num1 + num2;
+            break;
+        case 'subtract':
+            result = num1 - num2;
+            break;
+        case 'multiply':
+            result = num1 * num2;
+            break;
+        case 'divide':
+            result = num2 === 0 ? "Error (Div by 0)" : num1 / num2;
+            break;
+        default:
+            result = "Unknown operation";
+    }
+
+    resultDisplay.innerText = `Result: ${result}`;
+}
+
+calcButton.addEventListener('click', calculate, () =>{
+output.innerText = nameInput.value
+ })
