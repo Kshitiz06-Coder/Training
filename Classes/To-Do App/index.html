@@ -1,49 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-Do App</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Todo App</title>
+<style src="script.js"></style>
+<link rel="stylesheet" href="style.css">
 
+</head>
 <body>
 
-    <div class="container">
-        <h1>Todo List</h1>
+<div class="container">
+  <h1>Todo List</h1>
 
-        <div class="input-row">
-            <input type="text" id="taskInput" placeholder="Enter a task...">
-            <select id="priorityInput">
-                <option value="Low">Low</option>
-                <option value="Medium" selected>Medium</option>
-                <option value="High">High</option>
-            </select>
-            <input type="date" id="dueDateInput">
-            <button id="addBtn">Add Task</button>
-        </div>
-        <div id="errorMsg"></div>
+  <div class="input-row">
+    <input type="text" id="taskInput" placeholder="Enter a task...">
+    <select id="priorityInput">
+      <option value="Low">Low</option>
+      <option value="Medium" selected>Medium</option>
+      <option value="High">High</option>
+    </select>
+    <input type="date" id="dueDateInput">
+    <button id="addBtn">Add Task</button>
+  </div>
+  <div id="errorMsg"></div>
 
-        <input type="text" id="searchInput" placeholder="Search tasks...">
+  <input type="text" id="searchInput" placeholder="Search tasks...">
 
-        <div class="filters">
-            <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="completed">Completed</button>
-            <button class="filter-btn" data-filter="pending">Pending</button>
-        </div>
+  <div class="filters">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="completed">Completed</button>
+    <button class="filter-btn" data-filter="pending">Pending</button>
+  </div>
 
-        <div class="stats">
-            <div><strong id="totalCount">0</strong>Total</div>
-            <div><strong id="completedCount">0</strong>Completed</div>
-            <div><strong id="pendingCount">0</strong>Pending</div>
-        </div>
+  <div class="stats">
+    <div><strong id="totalCount">0</strong>Total</div>
+    <div><strong id="completedCount">0</strong>Completed</div>
+    <div><strong id="pendingCount">0</strong>Pending</div>
+  </div>
 
-        <ul id="taskList"></ul>
+  <ul id="taskList"></ul>
 
-        <button id="clearAllBtn">Clear All Tasks</button>
-    </div>
+  <button id="clearAllBtn">Clear All Tasks</button>
+</div>
+
 </body>
-
 </html>
